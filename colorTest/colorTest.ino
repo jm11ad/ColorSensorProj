@@ -91,9 +91,13 @@ void loop() {
   //Serial.print((int)r ); Serial.print(" "); Serial.print((int)g);Serial.print(" ");  Serial.println((int)b );
   //change this to use neopixels
 
-  setPixelColor(1, gammatable[(int)r], gammatable[(int)g], gammatable[(int)b]);
+  pixels.setPixelColor(1, gammatable[(int)r], gammatable[(int)g], gammatable[(int)b]);
 
   //analogWrite(redpin, gammatable[(int)r]);
   //analogWrite(greenpin, gammatable[(int)g]);
   //analogWrite(bluepin, gammatable[(int)b]);
+  
+  pixels.setBrightness(50);
+  pixels.show();
+  //delay(5000);
 }
