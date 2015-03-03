@@ -2,6 +2,7 @@
 #include "Adafruit_TCS34725.h"
 #include "Adafruit_NeoPixel.h"
 
+//test 1 2 3
 // Pick analog outputs, for the UNO these three work well
 // use ~560  ohm resistor between Red & Blue, ~1K for green (its brighter)
 //#define redpin 3
